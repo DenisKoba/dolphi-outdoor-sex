@@ -1,0 +1,11 @@
+{
+  "name": "dolphi-outdoor-sex",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^2.1.0"
+  }
+}
