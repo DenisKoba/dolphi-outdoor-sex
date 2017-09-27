@@ -314,6 +314,10 @@ body {
         padding: 50px 0; }
         .out-section .wrapper .out-decr-left .tip .toilet-heading {
           width: 1000px; }
+        .out-section .wrapper .out-decr-left .tip .outdoor-heading {
+          width: 1000px; }
+        .out-section .wrapper .out-decr-left .tip .elevator-heading {
+          width: 800px; }
         .out-section .wrapper .out-decr-left .tip__heading {
           display: block; }
         .out-section .wrapper .out-decr-left .tip__descr {
@@ -367,6 +371,31 @@ body {
   background-position: left;
   background-repeat: no-repeat; }
 
+.sixth-tip {
+  background-image: url("../img/out-six.png");
+  background-position: left;
+  background-repeat: no-repeat; }
+
+.seventh-tip {
+  background-image: url("../img/out-seven.png");
+  background-position: left;
+  background-repeat: no-repeat; }
+
+.eigth-tip {
+  background-image: url("../img/out-eight.png");
+  background-position: left;
+  background-repeat: no-repeat; }
+
+.nine-tip {
+  background-image: url("../img/out-nine.png");
+  background-position: left;
+  background-repeat: no-repeat; }
+
+.ten-tip {
+  background-image: url("../img/out-ten.png");
+  background-position: left;
+  background-repeat: no-repeat; }
+
 /* comment circles */
 .lifehack-comment-red:before {
   content: '';
@@ -375,7 +404,7 @@ body {
   background-image: url(../img/out-comment-blue.png);
   background-repeat: no-repeat;
   display: block;
-  margin: -25px 0 0 470px;
+  margin: -100px 0 0 470px;
   position: absolute; }
 
 .lifehack-comment-red:after {
@@ -395,7 +424,7 @@ body {
   background-image: url(../img/out-comment-yellow.png);
   background-repeat: no-repeat;
   display: block;
-  margin: -25px 0 0 470px;
+  margin: -100px 0 0 470px;
   position: absolute; }
 
 .lifehack-comment-yellow:after {
@@ -464,6 +493,41 @@ body {
   display: block;
   padding: 0 0 50px 0; }
 
+.out-circle {
+  background-image: url("../img/out-seven-section-bg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: block;
+  padding: 0 0 50px 0; }
+
+.out-outdoor {
+  background-image: url("../img/out-eight-section-bg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: block;
+  padding: 0 0 50px 0; }
+
+.out-car {
+  background-image: url("../img/out-eight-section-bg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: block;
+  padding: 0 0 50px 0; }
+
+.out-elevator {
+  background-image: url("../img/out-ten-section-bg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: block;
+  padding: 0 0 50px 0; }
+
+.out-fitting {
+  background-image: url("../img/out-eleven-section-bg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: block;
+  padding: 0 0 50px 0; }
+
 .image-metro {
   background-image: url(../img/out-pic-metro.png); }
 
@@ -484,3 +548,31 @@ body {
 
 .image-toilet {
   background-image: url(../img/out-pic-toilet.png); }
+
+.image-circle {
+  background-image: url(../img/out-pic-circle.png);
+  height: 500px !important;
+  width: 614px !important;
+  left: -152px !important; }
+
+.image-outdoor {
+  background-image: url(../img/out-pic-outdoor.png);
+  height: 615px !important; }
+
+.image-car {
+  background-image: url(../img/out-pic-car.png);
+  height: 519px !important;
+  width: 647px !important;
+  left: -206px !important; }
+
+.image-elevator {
+  background-image: url(../img/out-pic-elevator.png);
+  height: 644px !important;
+  width: 772px !important;
+  left: 432px  !important;
+  top: 78px  !important; }
+
+.image-fitting {
+  background-image: url(../img/out-pic-fitting.png);
+  left: -131px !important;
+  width: 559px !important; }
