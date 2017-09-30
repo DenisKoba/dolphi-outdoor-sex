@@ -4,18 +4,20 @@
 })*/
 
 $(document).ready(function () {
+    $(".ukr-version").hide();
 
-    $(".switch-language").click(function () {
-        $(".ukr-version").each(function () {
-            $(this).toggle();
+    $(".js-rus-switcher").each(function () {
+    $(this).click(function () {
+        $(".rus-version").show();
+        $(".ukr-version").hide();
+    })
+ })
+    $(".js-ukr-switcher").each(function () {
+        $(this).click(function () {
+            $(".rus-version").hide();
+            $(".ukr-version").show();
         })
-        $(".rus-version").each(function () {
-            $(this).toggle();
-        })
-    });
-
-
-
+    })
 
     $(window).scroll( function(){
         $('.js-out-animate-circle, .js-out-animate-img').each( function(i){
@@ -42,7 +44,6 @@ $(document).ready(function () {
     $(".js-expand-lifehack").each(function () {
         $(".js-expand-lifehack").click(function (e) {
             e.preventDefault();
-            $(this).css("display", "block");
             $(this).next().slideDown();
 
         })
@@ -93,13 +94,6 @@ $(document).ready(function () {
             showSlides(slideIndex += 1);
         }
     }
-
-
-
-
-
-
-
 
 })
 

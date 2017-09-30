@@ -161,6 +161,13 @@ body{
 
           .language-switcher {
             padding-left: 30px;
+            cursor: pointer;
+            transition: 1.2s;
+
+            &:hover{
+              color: #a5a5a5;
+              transition: 1.2s;
+            }
           }
         }
       }
@@ -435,7 +442,7 @@ body{
       .out-img-right {
         display: block;
         height: 500px;
-        width: 726px;
+        width: 637px;
         background-repeat: no-repeat;
         position: absolute;
         background-size: cover;
@@ -852,8 +859,8 @@ body{
 
 .image-elevator{
   background-image: url(../img/out-pic-elevator-neon.png);
-  height: 596px !important;
-  width: 736px !important;
+  height: 596px;
+  width: 736px;
   top: -886px;
   left: 450px;
 
@@ -931,14 +938,17 @@ body{
         font-size: 12px;
         font-weight: 600;
         color: #fff;
+        &:active{
+          color: red;
+          transition: 1.2s;
+        }
       }
     }
   }
 
   .gen-text-style {
     font-family: "Lato", sans-serif;
-    font-size: 12px;
-    line-height: 25px;
+    font-size: 12px !important;
     font-weight: 400;
     color: #fff;
     text-transform: uppercase;
@@ -1042,7 +1052,7 @@ body{
           .header-text {
             font-family: "Lato", sans-serif;
             font-size: 12px !important;
-            line-height: 16px !important;
+            line-height: 20px !important;
             font-weight: 500;
             color: #fff;
             text-transform: uppercase;
@@ -1114,6 +1124,10 @@ body{
           margin: 3px 0 0 5px;
           position: absolute;
           background-repeat: no-repeat;
+        }
+
+        &:active{
+          opacity: .5;
         }
       }
 
@@ -1352,9 +1366,11 @@ body{
         width: 100% !important;
         float: none !important;
         padding: -7px 30px 0 30px;
+        text-align: center !important;
 
         .tip {
           padding: 0 20px;
+          background-image: none !important;
 
           &__heading {
             display: block;
@@ -1411,6 +1427,7 @@ body{
           background-size: contain;
           max-width: 500px;
           margin: auto;
+          text-align: center;
 
           &__heading {
             padding: 0 0 20px 0 !important;
@@ -1419,13 +1436,18 @@ body{
             font-size: 16px !important;
             text-transform: uppercase !important;
 
+            &:active{
+              opacity: .5;
+            }
+
             &:after {
               content: "";
               background-image: url("../img/out-arrow.png");
-              width: 22px;
-              height: 22px;
+              background-size: contain;
+              width: 30px;
+              height: 30px;
               display: inline-block;
-              margin: -2px 0 0 5px;
+              margin: -6px 0 0 5px;
               position: absolute;
 
             }
@@ -1433,7 +1455,7 @@ body{
 
           &__text {
             display: none;
-            text-align: center;
+            text-align: center !important;
             max-width: 500px !important;
             margin: auto !important;
           }
@@ -1446,6 +1468,7 @@ body{
 
         .tip {
           padding: 0 20px;
+          background-image: none !important;
 
           .toilet-heading {
             width: 100%;
@@ -1521,13 +1544,18 @@ body{
             font-size: 16px !important;
             text-transform: uppercase !important;
 
+            &:active{
+              opacity: .5;
+            }
+
             &:after {
               content: "";
               background-image: url("../img/out-arrow.png");
-              width: 22px;
-              height: 22px;
+              background-size: contain;
+              width: 30px;
+              height: 30px;
               display: inline-block;
-              margin: -2px 0 0 5px;
+              margin: -6px 0 0 5px;
               position: absolute;
 
             }
@@ -1547,65 +1575,7 @@ body{
 
   /* section numbers */
 
-  .first-tip {
-    background-image: url("../img/out-one.png");
-    background-position: left;
-    background-repeat: no-repeat;
-  }
 
-  .second-tip {
-    background-image: url("../img/out-two.png");
-    background-position: left;
-    background-repeat: no-repeat;
-  }
-
-  .third-tip {
-    background-image: url("../img/out-three.png");
-    background-position: left;
-    background-repeat: no-repeat;
-  }
-
-  .four-tip {
-    background-image: url("../img/out-four.png");
-    background-position: left;
-    background-repeat: no-repeat;
-  }
-
-  .fifth-tip {
-    background-image: url("../img/out-five.png");
-    background-position: left;
-    background-repeat: no-repeat;
-  }
-
-  .sixth-tip {
-    background-image: url("../img/out-six.png");
-    background-position: left;
-    background-repeat: no-repeat;
-  }
-
-  .seventh-tip {
-    background-image: url("../img/out-seven.png");
-    background-position: left;
-    background-repeat: no-repeat;
-  }
-
-  .eigth-tip {
-    background-image: url("../img/out-eight.png");
-    background-position: left;
-    background-repeat: no-repeat;
-  }
-
-  .nine-tip {
-    background-image: url("../img/out-nine.png");
-    background-position: left;
-    background-repeat: no-repeat;
-  }
-
-  .ten-tip {
-    background-image: url("../img/out-ten.png");
-    background-position: left;
-    background-repeat: no-repeat;
-  }
 
   /* comment circles */
 
@@ -1736,6 +1706,9 @@ body{
     display: block;
     position: absolute;
     margin: 0 30px;
+    &:active{
+      opacity: .5;
+    }
   }
 
   .slider-arrow-right {
@@ -1748,6 +1721,9 @@ body{
     position: absolute;
     right: 0;
     margin: -8px 30px 0 30px;
+    &:active{
+      opacity: .5;
+    }
   }
 
   .out-slider-container{
