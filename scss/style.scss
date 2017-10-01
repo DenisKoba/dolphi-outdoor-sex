@@ -445,7 +445,7 @@ body{
         width: 637px;
         background-repeat: no-repeat;
         position: absolute;
-        background-size: cover;
+        background-size: contain;
         opacity: 0;
 
       }
@@ -456,7 +456,7 @@ body{
         width: 628px;
         background-repeat: no-repeat;
         position: absolute;
-        background-size: cover;
+        background-size: contain;
         opacity: 0;
       }
 
@@ -801,9 +801,37 @@ body{
 }
 
 .image-metro{
-  background-image: url(../img/out-pic-metro-neon.png);
   left: 563px;
   top: -700px;
+  background-image: url("../img/out-pic-metro-animation.png");
+
+  @keyframes moveMetroLeg {
+    0%{
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(15deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }
+  
+  &:after{
+    content: "";
+    width: 224px;
+    height: 70px;
+    background-image: url(../img/out-pic-metro-animation-legs.png);
+    background-size: 50%;
+    background-position: right;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 197px;
+    left: 139px;
+    -webkit-animation: moveMetroLeg 4s infinite;
+    -o-animation: moveMetroLeg 4s infinite;
+    animation: moveMetroLeg 4s infinite;
+    }
 }
 
 .image-party{
@@ -813,11 +841,39 @@ body{
 }
 
 .image-bus{
-  background-image: url(../img/out-pic-bus-neon.png);
-  height: 770px;
+  background-image: url(../img/out-pic-bus-animation.png);
+  height: 458px;
   width: 800px;
   left: 483px;
   top: -800px;
+
+  @keyframes moveBusLeg {
+    0%{
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(-25deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }
+
+  &:after{
+    content: "";
+    width: 145px;
+    height: 70px;
+    background-image: url(../img/out-pic-bus-animation-legs.png);
+    background-size: 50%;
+    background-position: right;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 180px;
+    left: 64px;
+    -webkit-animation: moveBusLeg 3s infinite;
+    -o-animation: moveBusLeg 3s infinite;
+    animation: moveBusLeg 3s infinite;
+  }
 }
 
 .image-balcony{
@@ -826,6 +882,68 @@ body{
   width: 655px;
   top: -800px;
   left: -200px;
+
+  @keyframes turnLightsOne {
+    0%{
+      opacity: 1;
+    }
+    25%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0;
+    }
+    70%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+  @keyframes turnLightsTwo {
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+  &:before{
+    content: "";
+    width: 13px;
+    height: 20px;
+    background-image: url(../img/out-pic-balcony-animation-window.png);
+    background-size: contain;
+    background-position: right;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 386px;
+    left: 146px;
+    -webkit-animation: turnLightsTwo 5s infinite;
+    -o-animation: turnLightsTwo 5s infinite;
+    animation: turnLightsTwo 5s infinite;
+  }
+
+  &:after{
+    content: "";
+    width: 13px;
+    height: 20px;
+    background-image: url(../img/out-pic-balcony-animation-window.png);
+    background-size: contain;
+    background-position: right;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 352px;
+    left: 195px;
+    -webkit-animation: turnLightsOne 5s infinite;
+    -o-animation: turnLightsOne 5s infinite;
+    animation: turnLightsOne 5s infinite;
+  }
 }
 
 .image-toilet{
@@ -835,34 +953,171 @@ body{
 }
 
 .image-circle{
-  background-image: url(../img/out-pic-circle-neon.png);
+  background-image: url(../img/out-pic-circle-animation.png);
   height: 500px;
   width: 614px;
   top: -800px;
   left: -200px;
+
+  @keyframes turnLightsTwo {
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+  &:before{
+    content: "";
+    width: 159px;
+    height: 139px;
+    background-image: url(../img/out-pic-circle-animation-stars.png);
+    background-size: contain;
+    background-position: right;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 166px;
+    left: 428px;
+    -webkit-animation: turnLightsTwo 5s infinite;
+    -o-animation: turnLightsTwo 5s infinite;
+    animation: turnLightsTwo 5s infinite;
+  }
+
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 227px;
+    left: 518px;
+  }
 }
 
 .image-outdoor{
-  background-image: url(../img/out-pic-outdoor-neon.png);
+  background-image: url(../img/out-pic-outdoor-animation.png);
   height: 615px;
   top: -899px;
   left: 500px;
+
+  &:after{
+    content: "";
+    width: 625px;
+    height: 510px;
+    background-image: url(../img/out-pic-outdoor-animation-bush.png);
+    background-size: contain;
+    background-position: right;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: -32px;
+    left: -87px;
+  }
+  @keyframes moveOutdoorLegs {
+    0%{
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(-20deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }
+
+  &:before{
+    content: "";
+    width: 107px;
+    height: 311px;
+    background-image: url(../img/out-pic-outdoor-animation-legs.png);
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 154px;
+    background-position: top;
+    left: 352px;
+    -webkit-animation: moveOutdoorLegs 5s infinite;
+    -o-animation: moveOutdoorLegs 5s infinite;
+    animation: moveOutdoorLegs 5s infinite;
+    }
 }
 
 .image-car{
-  background-image: url(../img/out-pic-car-neon.png);
+  background-image: url(../img/out-pic-car-animation.png);
   height: 519px;
   width: 647px;
   left: -206px;
   top: -910px;
+
+  @keyframes moveCloud {
+    0%{
+      left: 300px;
+    }
+    50%{
+      left: 450px;
+    }
+    100%{
+      left: 300px;
+    }
+  }
+
+  &:after{
+    content: "";
+    width: 107px;
+    height: 31px;
+    background-image: url(../img/out-pic-car-animation-cloud.png);
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 71px;
+    background-position: top;
+    left: 300px;
+    -webkit-animation: moveCloud 30s infinite;
+    -o-animation: moveCloud 30s infinite;
+    animation: moveCloud 30s infinite;
+  }
 }
 
 .image-elevator{
-  background-image: url(../img/out-pic-elevator-neon.png);
+  background-image: url(../img/out-pic-elevator-animation.png);
   height: 596px;
   width: 736px;
-  top: -886px;
-  left: 450px;
+  top: -861px;
+  left: 501px;
+
+  @keyframes moveBra {
+      0% {
+        transform: rotate(-15deg);
+      }
+      50% {
+        transform: rotate(15deg);
+      }
+    100% {
+      transform: rotate(-15deg);
+    }
+    }
+
+  &:after{
+    content: "";
+    width: 42px;
+    height: 173px;
+    background-image: url(../img/out-pic-elevator-animation-bra.png);
+    background-size: 50%;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 86px;
+    background-position-Y: bottom;
+    background-position-x: right;
+    left: 431px;
+    -webkit-animation: moveBra 2s infinite;
+    -o-animation: moveBra 2s infinite;
+    animation: moveBra 2s infinite;
+  }
 
 }
 
@@ -876,7 +1131,6 @@ body{
 .out-slider-container{
   display: block;
 }
-
 
 .out-footer{
   width: 100%;
@@ -1341,6 +1595,12 @@ body{
           top: 0 !important;
           background-size: cover;
           margin: auto !important;
+          &:after{
+            display: none !important;
+          }
+          &:before{
+            display: none !important;
+          }
         }
 
         .out-img-left {
@@ -1353,6 +1613,12 @@ body{
           top: 0 !important;
           background-size: cover;
           margin: auto !important;
+          &:after{
+            display: none !important;
+          }
+          &:before{
+            display: none !important;
+          }
         }
 
       }
@@ -1694,8 +1960,30 @@ body{
     padding: 0 0 50px 0;
   }
 
+  .image-metro{
+    background-image: url(../img/out-pic-metro-neon.png) !important;
+  }
+
   .image-bus {
     background-position: 15px -45px;
+    background-image: url(../img/out-pic-bus-neon.png) !important;
+  }
+
+
+  .image-circle{
+    background-image: url(../img/out-pic-circle-neon.png) !important;
+  }
+  .image-outdoor{
+    background-image: url(../img/out-pic-outdoor-neon.png) !important;
+
+  }
+
+  .image-car{
+    background-image: url(../img/out-pic-car-neon.png) !important;
+  }
+
+  .image-elevator{
+    background-image: url(../img/out-pic-elevator-neon.png) !important;
   }
 
   .slider-arrow-left {
