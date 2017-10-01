@@ -725,7 +725,7 @@ body{
     background-position: center top;
     background-repeat: no-repeat;
     display: block;
-    padding: 0 0 50px 0;
+    padding: 0 !important;
   }
 
   .out-party {
@@ -733,7 +733,7 @@ body{
     background-position: center top;
     background-repeat: no-repeat;
     display: block;
-    padding: 0 0 50px 0;
+    padding: 0 !important;
   }
 
   .out-bus {
@@ -741,7 +741,7 @@ body{
   background-position: center top;
   background-repeat: no-repeat;
   display: block;
-  padding: 0 0 50px 0;
+    padding: 0 !important;
 }
 
 .out-balcony {
@@ -749,7 +749,7 @@ body{
   background-position: center top;
   background-repeat: no-repeat;
   display: block;
-  padding: 0 0 50px 0;
+  padding: 0 !important;
 }
 
 .out-toilet {
@@ -757,7 +757,7 @@ body{
   background-position: center top;
   background-repeat: no-repeat;
   display: block;
-  padding: 0 0 50px 0;
+  padding: 0 !important;
 }
 
 .out-circle {
@@ -765,7 +765,7 @@ body{
   background-position: center top;
   background-repeat: no-repeat;
   display: block;
-  padding: 0 0 50px 0;
+  padding: 0 !important;
 }
 
 .out-outdoor {
@@ -773,7 +773,7 @@ body{
   background-position: center top;
   background-repeat: no-repeat;
   display: block;
-  padding: 0 0 50px 0;
+  padding: 0 !important;
 }
 
 .out-car {
@@ -781,7 +781,7 @@ body{
   background-position: center top;
   background-repeat: no-repeat;
   display: block;
-  padding: 0 0 50px 0;
+  padding: 0 !important;
 }
 
 .out-elevator {
@@ -789,7 +789,7 @@ body{
   background-position: center top;
   background-repeat: no-repeat;
   display: block;
-  padding: 0 0 50px 0;
+  padding: 0 !important;
 }
 
 .out-fitting {
@@ -797,7 +797,7 @@ body{
   background-position: center top;
   background-repeat: no-repeat;
   display: block;
-  padding: 0 0 50px 0;
+  padding: 0 !important;
 }
 
 .image-metro{
@@ -845,7 +845,7 @@ body{
   height: 458px;
   width: 800px;
   left: 483px;
-  top: -800px;
+  top: -698px;
 
   @keyframes moveBusLeg {
     0%{
@@ -949,7 +949,7 @@ body{
 .image-toilet{
   background-image: url(../img/out-pic-toilet-neon.png);
   left: 500px;
-  top: -800px;
+  top: -678px;
 }
 
 .image-circle{
@@ -1003,8 +1003,8 @@ body{
 .image-outdoor{
   background-image: url(../img/out-pic-outdoor-animation.png);
   height: 615px;
-  top: -899px;
-  left: 500px;
+  top: -778px;
+  left: 590px;
 
   &:after{
     content: "";
@@ -1052,7 +1052,7 @@ body{
   height: 519px;
   width: 647px;
   left: -206px;
-  top: -910px;
+  top: -776px;
 
   @keyframes moveCloud {
     0%{
