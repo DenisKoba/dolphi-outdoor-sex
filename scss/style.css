@@ -615,7 +615,7 @@ body {
   background-image: url(../img/out-pic-balcony-neon.png);
   height: 500px;
   width: 655px;
-  top: -800px;
+  top: -884px;
   left: -200px; }
 
 @keyframes turnLightsOne {
@@ -811,8 +811,7 @@ body {
 .image-fitting {
   background-image: url(../img/out-pic-fitting-neon.png);
   top: -800px;
-  left: -250px;
-  width: 559px; }
+  left: -154px; }
 
 .out-slider-container {
   display: block; }
