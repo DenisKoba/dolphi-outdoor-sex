@@ -6,6 +6,12 @@
 $(document).ready(function () {
     $(".ukr-version").hide();
 
+
+        $("body").children().each(function() {
+            $(this).html($(this).html().replace(/&#8232;/g," "));
+        });
+
+
     $(".js-rus-switcher").each(function () {
     $(this).click(function () {
         $(".rus-version").show();
@@ -97,8 +103,3 @@ $(document).ready(function () {
 
 })
 
-$(document).ready(function() {
-    $("body").children().each(function() {
-        $(this).html($(this).html().replace(/&#8232;/g," "));
-    });
-});
