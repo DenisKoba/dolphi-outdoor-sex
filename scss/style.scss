@@ -21,11 +21,11 @@ body{
   line-height: 25px;
   font-weight: 400;
   color: #fff;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 .tip__heading{
-  font-size: 60px;
+  font-size: 40px;
   font-family: Raleway, sans-serif;
   color: #fff;
   font-weight: 800;
@@ -37,7 +37,7 @@ body{
   font-size: 40px;
   font-family: Lato, sans-serif;
   color: #fff;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 .hardness-level-text-style{
@@ -184,35 +184,7 @@ body{
         }
       }
 
-      .main-sighn {
 
-        &__sex{
-          position: absolute;
-
-          &:after{
-            content: "";
-            background-image: url(../img/out-sex.png);
-            width: 300px;
-            height: 300px;
-            display: block;
-            top: -13px;
-            left: 636px;
-            position: absolute;
-            z-index: 2;
-          }
-        }
-
-        &__sighn {
-          font-family: "Lato", sans-serif;
-          font-size: 154px;
-          line-height: 250px;
-          font-weight: 600;
-          color: #fff;
-          animation: sighnBlink 2s infinite;
-          transition: .3s;
-          text-shadow: 0px 0px 20px #fff;
-        }
-      }
 
       .condoms {
         display: block;
@@ -252,7 +224,7 @@ body{
       .header-sub-text{
         text-align: center;
         margin: 20px auto;
-        padding: 10px 0;
+        padding: 0;
       }
     }
 
@@ -465,7 +437,7 @@ body{
       .out-img-left {
         display: block;
         height: 500px;
-        width: 628px;
+        width: 500px;
         background-repeat: no-repeat;
         position: absolute;
         background-size: contain;
@@ -511,10 +483,11 @@ body{
 
       .lifehack {
         display: block;
-        padding: 50px 0;
+        padding: 50px;
         background-image: url("../img/out-comment-dots-bg.png");
         background-position: center;
         background-repeat: no-repeat;
+        width: 400px;
 
         &__heading {
           padding: 30px;
@@ -572,10 +545,11 @@ body{
 
         .lifehack {
           display: block;
-          padding: 50px 0;
+          padding: 50px;
           background-image: url("../img/out-comment-dots-bg.png");
           background-position: center;
           background-repeat: no-repeat;
+          width: 400px;
 
           &__heading {
             padding: 30px;
@@ -664,7 +638,7 @@ body{
     background-image: url(../img/out-comment-blue.png);
     background-repeat: no-repeat;
     display: block;
-    margin: -100px 0 0 470px;
+    margin: -100px 0 0 374px;
     position: absolute;
   }
 
@@ -689,7 +663,7 @@ body{
       background-image: url(../img/out-comment-yellow.png);
       background-repeat: no-repeat;
       display: block;
-      margin: -100px 0 0 470px;
+      margin: -100px 0 0 374px;
       position: absolute;
     }
 
@@ -714,7 +688,7 @@ body{
     background-image: url(../img/out-comment-green.png);
     background-repeat: no-repeat;
     display: block;
-    margin: -100px 0 0 470px;
+    margin: -100px 0 0 374px;
     position: absolute;
   }
 
@@ -734,7 +708,7 @@ body{
 
   .out-metro {
     background-image: url("../img/out-metro-bg.png");
-    background-position: center top;
+    background-position: 78% top;
     background-repeat: no-repeat;
     display: block;
     padding: 0 !important;
@@ -782,7 +756,7 @@ body{
 
 .out-outdoor {
   background-image: url("../img/out-outdoor-bg.png");
-  background-position: center 169px;
+  background-position: center top;
   background-repeat: no-repeat;
   display: block;
   padding: 0 !important;
@@ -813,8 +787,8 @@ body{
 }
 
 .image-metro{
-  left: 563px;
-  top: -700px;
+  left: 476px;
+  top: -654px;
   background-image: url("../img/out-pic-metro-animation.png");
 
   @keyframes moveMetroLeg {
@@ -831,15 +805,15 @@ body{
   
   &:after{
     content: "";
-    width: 224px;
-    height: 70px;
+    width: 152px;
+    height: 50px;
     background-image: url(../img/out-pic-metro-animation-legs.png);
     background-size: 50%;
     background-position: right;
     position: absolute;
     background-repeat: no-repeat;
-    top: 197px;
-    left: 139px;
+    top: 164px;
+    left: 124px;
     -webkit-animation: moveMetroLeg 4s infinite;
     -o-animation: moveMetroLeg 4s infinite;
     animation: moveMetroLeg 4s infinite;
@@ -848,14 +822,13 @@ body{
 
 .image-party{
   background-image: url(../img/out-pic-party-neon.png);
-  top: -930px;
-  left: -204px;
+  top: -811px;
+  left: -153px;
 }
 
 .image-bus{
   background-image: url(../img/out-pic-bus-animation.png);
   height: 458px;
-  width: 800px;
   left: 483px;
   top: -698px;
 
@@ -873,15 +846,15 @@ body{
 
   &:after{
     content: "";
-    width: 145px;
-    height: 70px;
+    width: 110px;
+    height: 47px;
     background-image: url(../img/out-pic-bus-animation-legs.png);
     background-size: 50%;
     background-position: right;
     position: absolute;
     background-repeat: no-repeat;
-    top: 180px;
-    left: 64px;
+    top: 146px;
+    left: 54px;
     -webkit-animation: moveBusLeg 3s infinite;
     -o-animation: moveBusLeg 3s infinite;
     animation: moveBusLeg 3s infinite;
@@ -892,8 +865,8 @@ body{
   background-image: url(../img/out-pic-balcony-neon.png);
   height: 500px;
   width: 655px;
-  top: -884px;
-  left: -200px;
+  top: -786px;
+  left: -134px;
 
   @keyframes turnLightsOne {
     0%{
@@ -961,14 +934,14 @@ body{
 .image-toilet{
   background-image: url(../img/out-pic-toilet-neon.png);
   left: 500px;
-  top: -678px;
+  top: -607px;
 }
 
 .image-circle{
   background-image: url(../img/out-pic-circle-animation.png);
   height: 500px;
   width: 614px;
-  top: -800px;
+  top: -661px;
   left: -200px;
 
   @keyframes turnLightsTwo {
@@ -1014,21 +987,21 @@ body{
 
 .image-outdoor{
   background-image: url(../img/out-pic-outdoor-animation.png);
-  height: 615px;
-  top: -778px;
-  left: 590px;
+  top: -716px;
+  left: 550px;
+  width: 442px !important;
 
   &:after{
     content: "";
-    width: 625px;
-    height: 510px;
+    width: 439px;
+    height: 279px;
     background-image: url(../img/out-pic-outdoor-animation-bush.png);
     background-size: contain;
     background-position: right;
     position: absolute;
     background-repeat: no-repeat;
-    top: -32px;
-    left: -87px;
+    top: 25px;
+    left: -50px;
   }
   @keyframes moveOutdoorLegs {
     0%{
@@ -1044,15 +1017,15 @@ body{
 
   &:before{
     content: "";
-    width: 107px;
-    height: 311px;
+    width: 74px;
+    height: 226px;
     background-image: url(../img/out-pic-outdoor-animation-legs.png);
     background-size: contain;
     position: absolute;
     background-repeat: no-repeat;
-    top: 154px;
+    top: 114px;
     background-position: top;
-    left: 352px;
+    left: 249px;
     -webkit-animation: moveOutdoorLegs 5s infinite;
     -o-animation: moveOutdoorLegs 5s infinite;
     animation: moveOutdoorLegs 5s infinite;
@@ -1116,16 +1089,16 @@ body{
 
   &:after{
     content: "";
-    width: 42px;
-    height: 173px;
+    width: 32px;
+    height: 153px;
     background-image: url(../img/out-pic-elevator-animation-bra.png);
     background-size: 50%;
     position: absolute;
     background-repeat: no-repeat;
-    top: 86px;
+    top: 60px;
     background-position-Y: bottom;
     background-position-x: right;
-    left: 431px;
+    left: 375px;
     -webkit-animation: moveBra 2s infinite;
     -o-animation: moveBra 2s infinite;
     animation: moveBra 2s infinite;
@@ -1233,7 +1206,7 @@ body{
     font-size: 12px !important;
     font-weight: 400;
     color: #fff;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
   }
 
   .tip__heading {
@@ -1337,7 +1310,7 @@ body{
             line-height: 20px !important;
             font-weight: 500;
             color: #fff;
-            text-transform: uppercase;
+            /*text-transform: uppercase;*/
             text-align: center;
             display: block;
             margin: 0 !important;
@@ -1377,7 +1350,7 @@ body{
           line-height: 16px !important;
           font-weight: 500;
           color: #fff;
-          text-transform: uppercase;
+          /*text-transform: uppercase;*/
           text-align: center;
           display: none;
           margin: 0 !important;
@@ -1601,6 +1574,7 @@ body{
   .out-section {
     overflow: hidden;
     padding: 0 !important;
+    background-image: none !important;
 
     .shell {
       display: block;
@@ -1616,7 +1590,7 @@ body{
         .out-img-right {
           display: block !important;
           height: 240px;
-          width: 300px;
+          width: 300px !important;
           background-repeat: no-repeat;
           position: relative !important;
           left: 0 !important;
@@ -1634,7 +1608,7 @@ body{
         .out-img-left {
           display: block !important;
           height: 240px;
-          width: 300px;
+          width: 300px !important;
           background-repeat: no-repeat;
           position: relative !important;
           left: 0 !important;
@@ -1678,7 +1652,7 @@ body{
               color: #fff;
               font-weight: 800;
               text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.72);
-              text-transform: uppercase;
+              /*text-transform: uppercase;*/
               animation: sighnBlink 2s infinite;
               transition: .3s;
             }
@@ -1702,7 +1676,7 @@ body{
             font-size: 30px;
             font-family: Lato, sans-serif;
             color: #fff;
-            text-transform: uppercase;
+            /*text-transform: uppercase;*/
             display: inline-block;
             width: 150px;
             text-align: center;
@@ -1719,7 +1693,7 @@ body{
           background-repeat: no-repeat;
           padding: 20px 20px !important;
           background-size: contain;
-          max-width: 500px;
+          width: 280px !important;
           margin: auto;
           text-align: center;
 
@@ -1728,7 +1702,7 @@ body{
             display: block;
             text-align: center;
             font-size: 16px !important;
-            text-transform: uppercase !important;
+            /*text-transform: uppercase !important;*/
 
             &:active{
               opacity: .5;
@@ -1788,7 +1762,7 @@ body{
               color: #fff;
               font-weight: 800;
               text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.72);
-              text-transform: uppercase;
+              /*text-transform: uppercase;*/
               animation: sighnBlink 2s infinite;
               transition: .3s;
             }
@@ -1811,7 +1785,7 @@ body{
             font-size: 30px;
             font-family: Lato, sans-serif;
             color: #fff;
-            text-transform: uppercase;
+            /*text-transform: uppercase;*/
             display: inline-block;
             width: 150px;
             text-align: center;
@@ -1828,7 +1802,7 @@ body{
           background-repeat: no-repeat;
           padding: 20px 20px !important;
           background-size: contain;
-          max-width: 500px;
+          width: 280px !important;
           margin: auto;
 
           &__heading {
@@ -1836,7 +1810,7 @@ body{
             display: block;
             text-align: center;
             font-size: 16px !important;
-            text-transform: uppercase !important;
+            /*text-transform: uppercase !important;*/
 
             &:active{
               opacity: .5;
@@ -1910,7 +1884,7 @@ body{
 
   .out-metro {
     background-image: url("../img/out-metro-bg.png");
-    background-position: center top;
+    background-position: 72% top;
     background-repeat: no-repeat;
     display: block;
     padding: 0 0 50px 0;
@@ -2136,6 +2110,7 @@ body{
       display: block;
       max-width: 700px;
       margin: auto;
+      text-align: center;
 
       &_one{
         font-family: "Din Pro", sans-serif;
