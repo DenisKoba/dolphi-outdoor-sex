@@ -112,16 +112,25 @@ body {
       .out-header__wrapper_first-scroll .nav-bar .dolphi-logo {
         display: inline-block;
         float: left; }
+      .out-header__wrapper_first-scroll .nav-bar .dolphi-fb {
+        display: inline-block;
+        float: left;
+        margin: 6px 0 0 42px;
+        opacity: 1;
+        transition: 1s; }
+        .out-header__wrapper_first-scroll .nav-bar .dolphi-fb:hover {
+          opacity: .8;
+          transition: 1s; }
       .out-header__wrapper_first-scroll .nav-bar .language {
         display: inline-block;
         float: right; }
         .out-header__wrapper_first-scroll .nav-bar .language .language-switcher {
           padding-left: 30px;
           cursor: pointer;
-          transition: 1.2s; }
+          transition: .8s; }
           .out-header__wrapper_first-scroll .nav-bar .language .language-switcher:hover {
             color: #a5a5a5;
-            transition: 1.2s; }
+            transition: .8s; }
     .out-header__wrapper_first-scroll .main-sighn__sex {
       position: absolute; }
       .out-header__wrapper_first-scroll .main-sighn__sex:after {
@@ -819,24 +828,39 @@ body {
 .out-footer {
   width: 100%;
   background-color: #3b3b3b; }
-  .out-footer__logo {
-    display: block;
-    padding: 40px 0 0 0;
-    margin: auto; }
-  .out-footer__fb {
-    display: block;
-    padding: 30px 0 0 0;
-    margin: auto; }
   .out-footer__compliance {
     font-family: "Lato", sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 25px;
     font-weight: 400;
+    margin: auto;
     color: #fff;
-    text-transform: uppercase;
     text-align: center;
     display: block;
+    max-width: 500px;
     padding: 30px 0; }
+  .out-footer__health_one {
+    font-family: "Din Pro", sans-serif;
+    font-size: 81px;
+    line-height: 56px;
+    font-weight: 400;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    display: block;
+    max-width: 1000px;
+    padding: 0; }
+  .out-footer__health_two {
+    font-family: "Din Pro", sans-serif;
+    font-size: 65px;
+    line-height: 60px;
+    font-weight: 400;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    display: block;
+    max-width: 1000px;
+    padding: 0 0 30px 0; }
 
 /*******/
 @media screen and (max-width: 1000px) {
@@ -1415,5 +1439,96 @@ body {
       opacity: .5; }
   .out-slider-container {
     display: none; }
+  .out-footer__compliance {
+    font-family: "Lato", sans-serif;
+    font-size: 8px;
+    line-height: 12px;
+    font-weight: 400;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    display: block;
+    max-width: 500px;
+    padding: 30px; }
+  .out-footer__cross {
+    width: 20px;
+    height: 20px;
+    background-image: url("https://cdn0.iconfinder.com/data/icons/feather/96/circle-cross-512.png");
+    transition: .5s ease-out;
+    position: absolute;
+    margin: 10px 10px;
+    background-size: contain;
+    opacity: .5; }
+  .out-footer__health_one {
+    font-family: "Din Pro", sans-serif;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 400;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    display: block;
+    max-width: 1000px;
+    padding: 0; }
+  .out-footer__health_two {
+    font-family: "Din Pro", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    display: block;
+    max-width: 1000px;
+    padding: 0 0 30px 0; } }
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
   .out-footer {
-    display: none; } }
+    position: fixed;
+    bottom: 0; }
+    .out-footer__cross {
+      width: 20px;
+      height: 20px;
+      background-image: url("https://cdn0.iconfinder.com/data/icons/feather/96/circle-cross-512.png");
+      transition: .5s ease-out;
+      position: absolute;
+      margin: 10px 10px;
+      background-size: contain;
+      opacity: .5; }
+    .out-footer__compliance {
+      font-family: "Lato", sans-serif;
+      font-size: 8px;
+      line-height: 12px;
+      font-weight: 400;
+      margin: auto;
+      color: #fff;
+      text-align: center;
+      display: block;
+      max-width: 500px;
+      padding: 30px 0 10px 0; }
+    .out-footer__health {
+      display: block;
+      max-width: 700px;
+      margin: auto; }
+      .out-footer__health_one {
+        font-family: "Din Pro", sans-serif;
+        font-size: 25px;
+        line-height: 25px;
+        font-weight: 400;
+        margin: auto;
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        max-width: 1000px;
+        padding: 0; }
+      .out-footer__health_two {
+        font-family: "Din Pro", sans-serif;
+        font-size: 25px;
+        line-height: 20px;
+        font-weight: 400;
+        margin: auto;
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        max-width: 1000px;
+        padding: 0 0 30px 0; } }

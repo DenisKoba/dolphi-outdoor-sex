@@ -11,6 +11,10 @@ $(document).ready(function () {
             $(this).html($(this).html().replace(/&#8232;/g," "));
         });
 
+        $(".js-close-warning").click(function () {
+            $(".out-footer").fadeOut();
+        })
+
 
     $(".js-rus-switcher").each(function () {
     $(this).click(function () {

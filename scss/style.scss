@@ -155,6 +155,18 @@ body{
           float: left;
         }
 
+        .dolphi-fb{
+          display: inline-block;
+          float: left;
+          margin: 6px 0 0 42px;
+          opacity: 1;
+          transition: 1s;
+          &:hover{
+            opacity: .8;
+            transition: 1s;
+          }
+        }
+
         .language {
           display: inline-block;
           float: right;
@@ -162,11 +174,11 @@ body{
           .language-switcher {
             padding-left: 30px;
             cursor: pointer;
-            transition: 1.2s;
+            transition: .8s;
 
             &:hover{
               color: #a5a5a5;
-              transition: 1.2s;
+              transition: .8s;
             }
           }
         }
@@ -1135,28 +1147,45 @@ body{
   width: 100%;
   background-color: #3b3b3b;
 
-  &__logo{
-    display: block;
-    padding: 40px 0 0 0;
-    margin: auto;
-  }
-
-  &__fb{
-    display: block;
-    padding: 30px 0 0 0;
-    margin: auto;
-  }
-
   &__compliance{
     font-family: "Lato", sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 25px;
     font-weight: 400;
+    margin: auto;
     color: #fff;
-    text-transform: uppercase;
     text-align: center;
     display: block;
+    max-width: 500px;
     padding: 30px 0;
+  }
+
+  &__health{
+    &_one{
+      font-family: "Din Pro", sans-serif;
+      font-size: 81px;
+      line-height: 56px;
+      font-weight: 400;
+      margin: auto;
+      color: #fff;
+      text-align: center;
+      display: block;
+      max-width: 1000px;
+      padding: 0;
+    }
+
+    &_two{
+      font-family: "Din Pro", sans-serif;
+      font-size: 65px;
+      line-height: 60px;
+      font-weight: 400;
+      margin: auto;
+      color: #fff;
+      text-align: center;
+      display: block;
+      max-width: 1000px;
+      padding: 0 0 30px 0;
+    }
   }
 }
 
@@ -2018,8 +2047,122 @@ body{
   }
 
   .out-footer{
-    display: none;
-  }
 
+    &__compliance{
+      font-family: "Lato", sans-serif;
+      font-size: 8px;
+      line-height: 12px;
+      font-weight: 400;
+      margin: auto;
+      color: #fff;
+      text-align: center;
+      display: block;
+      max-width: 500px;
+      padding: 30px;
+    }
+
+    &__cross{
+      width: 20px;
+      height: 20px;
+      background-image: url('https://cdn0.iconfinder.com/data/icons/feather/96/circle-cross-512.png');
+      transition: .5s ease-out;
+      position: absolute;
+      margin: 10px 10px;
+      background-size: contain;
+      opacity: .5;
+    }
+
+    &__health{
+      &_one{
+        font-family: "Din Pro", sans-serif;
+        font-size: 25px;
+        line-height: 25px;
+        font-weight: 400;
+        margin: auto;
+        color: #fff;
+        text-align: center;
+        display: block;
+        max-width: 1000px;
+        padding: 0;
+      }
+
+      &_two{
+        font-family: "Din Pro", sans-serif;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+        margin: auto;
+        color: #fff;
+        text-align: center;
+        display: block;
+        max-width: 1000px;
+        padding: 0 0 30px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+  .out-footer{
+    position: fixed;
+    bottom: 0;
+
+    &__cross{
+      width: 20px;
+      height: 20px;
+      background-image: url('https://cdn0.iconfinder.com/data/icons/feather/96/circle-cross-512.png');
+      transition: .5s ease-out;
+      position: absolute;
+      margin: 10px 10px;
+      background-size: contain;
+      opacity: .5;
+
+    }
+
+    &__compliance{
+      font-family: "Lato", sans-serif;
+      font-size: 8px;
+      line-height: 12px;
+      font-weight: 400;
+      margin: auto;
+      color: #fff;
+      text-align: center;
+      display: block;
+      max-width: 500px;
+      padding: 30px 0 10px 0;
+    }
+
+    &__health{
+      display: block;
+      max-width: 700px;
+      margin: auto;
+
+      &_one{
+        font-family: "Din Pro", sans-serif;
+        font-size: 25px;
+        line-height: 25px;
+        font-weight: 400;
+        margin: auto;
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        max-width: 1000px;
+        padding: 0;
+      }
+
+      &_two{
+        font-family: "Din Pro", sans-serif;
+        font-size: 25px;
+        line-height: 20px;
+        font-weight: 400;
+        margin: auto;
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        max-width: 1000px;
+        padding: 0 0 30px 0;
+      }
+    }
+  }
 }
 
