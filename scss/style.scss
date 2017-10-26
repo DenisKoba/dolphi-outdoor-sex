@@ -414,7 +414,7 @@ body{
 /******************************* Block Styles *******************************************/
 
 .out-section {
-  overflow: hidden;
+  overflow-x: hidden;
 
   .shell {
     display: block;
@@ -438,7 +438,7 @@ body{
       .out-img-left {
         display: block;
         height: 500px;
-        width: 1500px;
+        width: 700px;
         background-repeat: no-repeat;
         position: absolute;
         background-size: contain;
