@@ -2,6 +2,7 @@ body{
   padding: 0;
   margin: 0;
   background-color: #000;
+  overflow-x: hidden;
 }
 
 
@@ -437,7 +438,7 @@ body{
       .out-img-left {
         display: block;
         height: 500px;
-        width: 500px;
+        width: 1500px;
         background-repeat: no-repeat;
         position: absolute;
         background-size: contain;
@@ -805,15 +806,15 @@ body{
   
   &:after{
     content: "";
-    width: 152px;
+    width: 208px;
     height: 50px;
     background-image: url(../img/out-pic-metro-animation-legs.png);
     background-size: 50%;
     background-position: right;
     position: absolute;
     background-repeat: no-repeat;
-    top: 164px;
-    left: 124px;
+    top: 213px;
+    left: 150px;
     -webkit-animation: moveMetroLeg 4s infinite;
     -o-animation: moveMetroLeg 4s infinite;
     animation: moveMetroLeg 4s infinite;
@@ -846,15 +847,15 @@ body{
 
   &:after{
     content: "";
-    width: 110px;
+    width: 157px;
     height: 47px;
     background-image: url(../img/out-pic-bus-animation-legs.png);
     background-size: 50%;
     background-position: right;
     position: absolute;
     background-repeat: no-repeat;
-    top: 146px;
-    left: 54px;
+    top: 215px;
+    left: 76px;
     -webkit-animation: moveBusLeg 3s infinite;
     -o-animation: moveBusLeg 3s infinite;
     animation: moveBusLeg 3s infinite;
@@ -989,19 +990,19 @@ body{
   background-image: url(../img/out-pic-outdoor-animation.png);
   top: -716px;
   left: 550px;
-  width: 442px !important;
+  width: 573px !important;
 
   &:after{
     content: "";
-    width: 439px;
-    height: 279px;
+    width: 570px;
+    height: 366px;
     background-image: url(../img/out-pic-outdoor-animation-bush.png);
     background-size: contain;
     background-position: right;
     position: absolute;
     background-repeat: no-repeat;
-    top: 25px;
-    left: -50px;
+    top: 26px;
+    left: -62px;
   }
   @keyframes moveOutdoorLegs {
     0%{
@@ -1017,15 +1018,15 @@ body{
 
   &:before{
     content: "";
-    width: 74px;
-    height: 226px;
+    width: 115px;
+    height: 331px;
     background-image: url(../img/out-pic-outdoor-animation-legs.png);
     background-size: contain;
     position: absolute;
     background-repeat: no-repeat;
-    top: 114px;
+    top: 129px;
     background-position: top;
-    left: 249px;
+    left: 338px;
     -webkit-animation: moveOutdoorLegs 5s infinite;
     -o-animation: moveOutdoorLegs 5s infinite;
     animation: moveOutdoorLegs 5s infinite;
@@ -1095,10 +1096,10 @@ body{
     background-size: 50%;
     position: absolute;
     background-repeat: no-repeat;
-    top: 60px;
+    top: 84px;
     background-position-Y: bottom;
     background-position-x: right;
-    left: 375px;
+    left: 435px;
     -webkit-animation: moveBra 2s infinite;
     -o-animation: moveBra 2s infinite;
     animation: moveBra 2s infinite;
