@@ -54,7 +54,6 @@ body {
 @keyframes load-circle {
   0% {
     stroke-dashoffset: 100; } }
-
 @keyframes sighnBlink {
   40% {
     opacity: 1; }
@@ -78,7 +77,6 @@ body {
     opacity: 1; }
   100% {
     opacity: .9; } }
-
 @keyframes turnOnImg {
   0% {
     opacity: 0; }
@@ -96,7 +94,6 @@ body {
     opacity: 1; }
   100% {
     opacity: 1; } }
-
 .out-header {
   background-color: black;
   background-image: url("../img/out-header-bg.png");
@@ -265,7 +262,7 @@ body {
 
 /******************************* Block Styles *******************************************/
 .out-section {
-  overflow: hidden; }
+  overflow-x: hidden; }
   .out-section .shell {
     display: block;
     margin: 0 auto;
@@ -283,7 +280,7 @@ body {
       .out-section .shell .image-base .out-img-left {
         display: block;
         height: 500px;
-        width: 1500px;
+        width: 700px;
         background-repeat: no-repeat;
         position: absolute;
         background-size: contain;
@@ -419,7 +416,6 @@ body {
   display: block;
   margin: -100px 0 0 374px;
   position: absolute; }
-
 .lifehack-comment-red:after {
   content: '';
   width: 80px;
@@ -439,7 +435,6 @@ body {
   display: block;
   margin: -100px 0 0 374px;
   position: absolute; }
-
 .lifehack-comment-yellow:after {
   content: '';
   width: 80px;
@@ -459,7 +454,6 @@ body {
   display: block;
   margin: -100px 0 0 374px;
   position: absolute; }
-
 .lifehack-comment-green:after {
   content: '';
   width: 80px;
@@ -545,7 +539,6 @@ body {
   left: 476px;
   top: -654px;
   background-image: url("../img/out-pic-metro-animation.png"); }
-
 @keyframes moveMetroLeg {
   0% {
     transform: rotate(0deg); }
@@ -578,7 +571,6 @@ body {
   height: 458px;
   left: 483px;
   top: -698px; }
-
 @keyframes moveBusLeg {
   0% {
     transform: rotate(0deg); }
@@ -607,7 +599,6 @@ body {
   width: 655px;
   top: -786px;
   left: -134px; }
-
 @keyframes turnLightsOne {
   0% {
     opacity: 1; }
@@ -619,7 +610,6 @@ body {
     opacity: 1; }
   100% {
     opacity: 1; } }
-
 @keyframes turnLightsTwo {
   0% {
     opacity: 0; }
@@ -667,7 +657,6 @@ body {
   width: 614px;
   top: -661px;
   left: -200px; }
-
 @keyframes turnLightsTwo {
   0% {
     opacity: 0; }
@@ -716,7 +705,6 @@ body {
     background-repeat: no-repeat;
     top: 26px;
     left: -62px; }
-
 @keyframes moveOutdoorLegs {
   0% {
     transform: rotate(0deg); }
@@ -745,7 +733,6 @@ body {
   width: 647px;
   left: -206px;
   top: -776px; }
-
 @keyframes moveCloud {
   0% {
     left: 300px; }
@@ -774,7 +761,6 @@ body {
   width: 736px;
   top: -861px;
   left: 501px; }
-
 @keyframes moveBra {
   0% {
     transform: rotate(-15deg); }
@@ -869,12 +855,14 @@ body {
         .mobile-nav-bar__language_switcher:active {
           color: red;
           transition: 1.2s; }
+
   .gen-text-style {
     font-family: "Lato", sans-serif;
     font-size: 12px !important;
     font-weight: 400;
     color: #fff;
     /*text-transform: uppercase;*/ }
+
   .tip__heading {
     font-size: 22px !important;
     font-family: Raleway, sans-serif;
@@ -882,25 +870,30 @@ body {
     font-weight: 800;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.72);
     text-transform: uppercase; }
+
   .lifehack-gen-style {
     font-size: 12px !important;
     font-family: Lato, sans-serif;
     color: #fff;
     text-transform: uppercase; }
+
   .hardness-level-text-style {
     font-size: 15px !important;
     font-family: Lato, sans-serif;
     color: #fff;
     text-transform: uppercase; }
+
   .language-switcher {
     font-family: "Lato", sans-serif;
     font-size: 20px;
     font-weight: 600;
     color: #fff; }
+
   .out-section {
     width: 100%;
     display: block;
     background-color: #000; }
+
   .out-header {
     background-color: black;
     background-image: none !important;
@@ -1008,6 +1001,7 @@ body {
         width: 70%;
         display: block !important;
         margin: 0 auto; }
+
   /******************************* hardness circle *******************************************/
   .o-progress-circle-red {
     margin: 0;
@@ -1042,6 +1036,7 @@ body {
         color: #ed4630;
         font-family: Lato, sans-serif;
         font-weight: 700; }
+
   .o-progress-circle-yellow {
     display: inline-block;
     position: relative;
@@ -1077,6 +1072,7 @@ body {
           stroke-width: 5px; }
     .o-progress-circle-yellow--rounded circle:nth-child(2) {
       stroke-linecap: butt; }
+
   .o-progress-circle-green {
     display: inline-block;
     position: relative;
@@ -1112,6 +1108,7 @@ body {
           stroke-width: 5px; }
     .o-progress-circle-green--rounded circle:nth-child(2) {
       stroke-linecap: butt; }
+
   /******************************* Block Styles *******************************************/
   .out-section {
     overflow: hidden;
@@ -1309,20 +1306,24 @@ body {
             text-align: center !important;
             max-width: 500px !important;
             margin: auto !important; }
+
   /* section numbers */
   /* comment circles */
   .lifehack-comment-red:before {
     display: none !important; }
   .lifehack-comment-red:after {
     display: none !important; }
+
   .lifehack-comment-yellow:before {
     display: none !important; }
   .lifehack-comment-yellow:after {
     display: none !important; }
+
   .lifehack-comment-green:before {
     display: none !important; }
   .lifehack-comment-green:after {
     display: none !important; }
+
   /* section backgriunds */
   .out-metro {
     background-image: url("../img/out-metro-bg.png");
@@ -1330,73 +1331,89 @@ body {
     background-repeat: no-repeat;
     display: block;
     padding: 0 0 50px 0; }
+
   .out-party {
     background-image: url("../img/out-party-bg.png");
     background-position: center top;
     background-repeat: no-repeat;
     display: block;
     padding: 0 0 50px 0; }
+
   .out-bus {
     background-image: url("../img/out-bus-bg.png");
     background-position: center top;
     background-repeat: no-repeat;
     display: block;
     padding: 0 0 50px 0; }
+
   .out-balcony {
     background-image: url("../img/out-fifth-section-bg.png");
     background-position: center top;
     background-repeat: no-repeat;
     display: block;
     padding: 0 0 50px 0; }
+
   .out-toilet {
     background-image: url("../img/out-toilet-bg.png");
     background-position: center top;
     background-repeat: no-repeat;
     display: block;
     padding: 0 0 50px 0; }
+
   .out-circle {
     background-image: url("../img/out-circle-bg.png");
     background-position: center top;
     background-repeat: no-repeat;
     display: block;
     padding: 0 0 50px 0; }
+
   .out-outdoor {
     background-image: url("../img/out-outdoor-bg.png");
     background-position: center top;
     background-repeat: no-repeat;
     display: block;
     padding: 0 0 50px 0; }
+
   .out-car {
     background-image: url("../img/out-outdoor-bg.png");
     background-position: center top;
     background-repeat: no-repeat;
     display: block;
     padding: 0 0 50px 0; }
+
   .out-elevator {
     background-image: url("../img/out-elevator-bg.png");
     background-position: center top;
     background-repeat: no-repeat;
     display: block;
     padding: 0 0 50px 0; }
+
   .out-fitting {
     background-image: url("../img/out-fitting-bg.png");
     background-position: center top;
     background-repeat: no-repeat;
     display: block;
     padding: 0 0 50px 0; }
+
   .image-metro {
     background-image: url(../img/out-pic-metro-neon.png) !important; }
+
   .image-bus {
     background-position: 15px -45px;
     background-image: url(../img/out-pic-bus-neon.png) !important; }
+
   .image-circle {
     background-image: url(../img/out-pic-circle-neon.png) !important; }
+
   .image-outdoor {
     background-image: url(../img/out-pic-outdoor-neon.png) !important; }
+
   .image-car {
     background-image: url(../img/out-pic-car-neon.png) !important; }
+
   .image-elevator {
     background-image: url(../img/out-pic-elevator-neon.png) !important; }
+
   .slider-arrow-left {
     width: 15px;
     height: 25px;
@@ -1407,6 +1424,7 @@ body {
     margin: 0 30px; }
     .slider-arrow-left:active {
       opacity: .5; }
+
   .slider-arrow-right {
     width: 15px;
     height: 25px;
@@ -1419,8 +1437,10 @@ body {
     margin: -8px 30px 0 30px; }
     .slider-arrow-right:active {
       opacity: .5; }
+
   .out-slider-container {
     display: none; }
+
   .out-footer__compliance {
     font-family: "Lato", sans-serif;
     font-size: 8px;
@@ -1463,7 +1483,6 @@ body {
     display: block;
     max-width: 1000px;
     padding: 0 0 30px 0; } }
-
 @media screen and (max-width: 1000px) and (min-width: 600px) {
   .out-footer {
     position: fixed;
@@ -1515,3 +1534,5 @@ body {
         display: inline-block;
         max-width: 1000px;
         padding: 0 0 30px 0; } }
+
+/*# sourceMappingURL=style.css.map */
